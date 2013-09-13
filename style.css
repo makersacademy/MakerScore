@@ -1,0 +1,38 @@
+.curriculum-details .header {
+  background-color: #ededed; }
+  .curriculum-details .header:hover {
+    background-color: whitesmoke; }
+  .curriculum-details .header .number, .curriculum-details .header .description {
+    display: inline-block; }
+  .curriculum-details .header .number {
+    padding: 13px 28px; }
+  @media (min-width: 568px) {
+    .curriculum-details .header .number:before {
+      content: "Week "; } }
+  @media (max-width: 568px) {
+    .curriculum-details .header .number {
+      padding: 8px 7px 8px 13px; } }
+.curriculum-details .body {
+  padding: 7px;
+  border-left: 2px solid #ad1a26;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #f2f2f2;
+  margin-bottom: 14px; }
+  .curriculum-details .body .project {
+    font-weight: bold; }
+    .curriculum-details .body .project p {
+      font-weight: normal;
+      margin-left: 10px; }
+  .curriculum-details .body .project:before {
+    content: 'Project: '; }
+  .curriculum-details .body .days li {
+    margin-left: 8px; }
+@media (min-width: 568px) {
+  .curriculum-details .body .days li {
+    margin-left: 3em; }
+  .curriculum-details .days li:before {
+    content: "Day ";
+    margin-right: 2em;
+    margin-left: -3.8em; } }
+.curriculum-details .week {
+  margin-bottom: 2px; }

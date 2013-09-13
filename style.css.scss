@@ -1,0 +1,57 @@
+.curriculum-details {
+  .header {
+    background-color: hsl(0,0%,93%);
+    &:hover {
+      background-color: hsl(0,0%,96%);
+    }
+    .number, .description {
+      display: inline-block;
+    }
+    .number {
+      padding: 13px 28px;
+    }
+    @media (min-width: 568px) {
+      .number:before{
+        content: "Week ";
+      }
+    }
+    @media (max-width: 568px) {
+      .number {
+        padding: 8px 7px 8px 13px;
+      }
+    }
+  }
+  .body{
+    padding: 7px;
+    border-left: 2px solid hsl(355, 74%, 39%);
+    border-bottom: 1px solid hsl(0,0%,80%);
+    border-right: 1px solid hsl(0, 0%, 95%);
+    margin-bottom: 14px;
+    .project {
+      font-weight: bold;
+      p {
+        font-weight: normal;
+        margin-left: 10px;
+      }
+    }
+    .project:before {
+      content: 'Project: ';
+    }
+    .days li {
+      margin-left: 8px;
+    }
+  }
+  @media (min-width: 568px) {
+    .body .days li {
+      margin-left: 3em;
+    }
+    .days li:before {
+      content: "Day ";
+      margin-right: 2em;
+      margin-left: -3.8em;
+    }
+  }
+  .week {
+    margin-bottom: 2px;
+  }
+}
