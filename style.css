@@ -1,11 +1,11 @@
 .curriculum-details .header {
   background-color: #ededed; }
-  .curriculum-details .header:hover {
-    background-color: whitesmoke; }
   .curriculum-details .header .number, .curriculum-details .header .description {
     display: inline-block; }
-  .curriculum-details .header .number {
+  .curriculum-details .header .number, .curriculum-details .header .score {
     padding: 13px 28px; }
+  .curriculum-details .header .score {
+    float: right; }
   @media (min-width: 568px) {
     .curriculum-details .header .number:before {
       content: "Week "; } }

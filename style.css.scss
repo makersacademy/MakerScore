@@ -1,14 +1,17 @@
 .curriculum-details {
   .header {
     background-color: hsl(0,0%,93%);
-    &:hover {
-      background-color: hsl(0,0%,96%);
-    }
+    // &:hover {
+    //   background-color: hsl(0,0%,96%);
+    // }
     .number, .description {
       display: inline-block;
     }
-    .number {
+    .number, .score {
       padding: 13px 28px;
+    }
+    .score {
+      float: right;
     }
     @media (min-width: 568px) {
       .number:before{

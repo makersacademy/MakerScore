@@ -17,7 +17,7 @@ app.directive('topicGroup', function(){
       };
     },
     restrict: 'AE',
-    template: '<div>{{score}}<span ng-transclude></span></div>',
+    template: '<div ng-transclude></div>',
     replace: true,
     transclude: true
   };
