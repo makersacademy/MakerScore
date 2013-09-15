@@ -43,6 +43,7 @@
   }
   @media (min-width: 568px) {
     .body .days li {
+      line-height: 26px;
       margin-left: 3em;
     }
     .days li:before {
@@ -52,6 +53,13 @@
     }
   }
   .week {
+    margin: auto;
+    max-width: 500px;
     margin-bottom: 2px;
+  }
+  .topic input{
+    clear: right;
+    float: right;
+    width: 3em;
   }
 }

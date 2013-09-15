@@ -29,10 +29,17 @@
     margin-left: 8px; }
 @media (min-width: 568px) {
   .curriculum-details .body .days li {
+    line-height: 26px;
     margin-left: 3em; }
   .curriculum-details .days li:before {
     content: "Day ";
     margin-right: 2em;
     margin-left: -3.8em; } }
 .curriculum-details .week {
+  margin: auto;
+  max-width: 500px;
   margin-bottom: 2px; }
+.curriculum-details .topic input {
+  clear: right;
+  float: right;
+  width: 3em; }
