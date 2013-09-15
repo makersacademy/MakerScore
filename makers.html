@@ -1,7 +1,13 @@
+<!DOCTYPE html>
 <html class="wf-futurapt-n3-active wf-futurapt-n4-active wf-futurapt-n7-active wf-proximanova-i4-active wf-proximanova-i7-active wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-n7-active wf-active"><head>
     <meta charset="utf-8">
 
     <title>MakerScore</title>
+
+    <script src="angular.min.js"></script>
+    <script src="underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="controllers.js"></script>
 
     <link href="http://www.makersacademy.com/assets/application.css" media="all" rel="stylesheet" type="text/css">
 
@@ -54,9 +60,8 @@
 </div>
 
 <div id="site_container_margin">
-  <div id="site_container">
-    <section class="panel">
-    <h1>MakerScore</h1>
+  <div id="site_container" ng-app="MakerScore">
+    <section class="panel" ng-include="'/index.html'">
     </section>
   </div>
 </div>
