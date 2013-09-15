@@ -29,20 +29,24 @@
   .curriculum-details .body .project:before {
     content: 'Project: '; }
   .curriculum-details .body .days li {
+    line-height: 33px;
     margin-left: 8px; }
+.curriculum-details .topic select {
+  width: 110px;
+  margin-bottom: 0;
+  float: right; }
 @media (min-width: 568px) {
   .curriculum-details .body .days li {
-    line-height: 33px;
     margin-left: 3em; }
   .curriculum-details .days li:before {
     content: "Day ";
     margin-right: 2em;
     margin-left: -3.8em; } }
+@media (max-width: 568px) {
+  .curriculum-details .topic select {
+    display: block;
+    float: none; } }
 .curriculum-details .week {
   margin: auto;
   max-width: 500px;
   margin-bottom: 2px; }
-.curriculum-details .topic select {
-  width: 110px;
-  margin-bottom: 0;
-  float: right; }

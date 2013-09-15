@@ -45,12 +45,17 @@
       content: 'Project: ';
     }
     .days li {
+      line-height: 33px;
       margin-left: 8px;
     }
   }
+  .topic select{
+    width: 110px;
+    margin-bottom: 0;
+    float: right;
+  }
   @media (min-width: 568px) {
     .body .days li {
-      line-height: 33px;
       margin-left: 3em;
     }
     .days li:before {
@@ -59,14 +64,15 @@
       margin-left: -3.8em;
     }
   }
+  @media (max-width: 568px) {
+    .topic select{
+      display: block;
+      float: none;
+    }
+  }
   .week {
     margin: auto;
     max-width: 500px;
     margin-bottom: 2px;
-  }
-  .topic select{
-    width: 110px;
-    margin-bottom: 0;
-    float: right;
   }
 }
