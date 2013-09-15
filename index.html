@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>MakerScore</title>
     <script src="angular.min.js"></script>
+    <script src="underscore-min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="controllers.js"></script>
 </head>
@@ -14,7 +15,10 @@
   <div class="header">
     <div class="number">1</div>
     <div class="description">Ruby &amp; Git</div>
-    <div class="score">{{score}}</div>
+    <div class="score">
+      <span>JSA: {{score | number:1}}</span> |
+      <span>Completion: {{completion * 100 | number:0 }}%</span>
+    </div>
   </div>
   <div class="body">
     <ol class="days">

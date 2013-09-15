@@ -8,12 +8,12 @@ app.directive('topicGroup', function(){
         topics.push(topic);
       };
       $scope.score = 0;
+      $scope.completion = 0;
       this.updateScore = function(){
-        var total = 0
-        angular.forEach(topics, function(topic){
-          total+=topic.score;
-        });
-        $scope.score = total / topics.length;
+        non_zero_topics = _.select(topics,function(t){return t.score!=0});
+        var total = _.reduce(non_zero_topics,function(sum,t){return t.score + sum},0);
+        $scope.score = total / non_zero_topics.length;
+        $scope.completion = non_zero_topics.length / topics.length;
       };
     },
     restrict: 'AE',
