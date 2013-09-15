@@ -1,13 +1,15 @@
-<h1>MakerScore</h1>
-<div class="curriculum-details">
-<topic-group class="week" >
+<h1 style="margin-bottom:25px;">MakerScore</h1>
+<div class="curriculum-details" topic-group>
+  <div class="subjects">
+    <div ng-repeat="(subject, scores) in subject_scores">
+      {{subject}}: <score score="{{scores.score}}" completion="{{scores.completion}}">
+    </div>
+  </div>
+<div class="week" >
   <div class="header">
     <div class="number">1</div>
     <div class="description">Ruby &amp; Git</div>
-    <div class="score">
-      <span>JSA: {{score | number:1}}</span> |
-      <span>Completion: {{completion * 100 | number:0 }}%</span>
-    </div>
+    <score score="{{score}}" completion="{{completion}}">
   </div>
   <div class="body">
     <ol class="days">
@@ -18,5 +20,5 @@
       <topic subject="Unix">Command-line revision. Unixoid test.</topic>
     </ol>
   </div>
-</topic-group>
+</div>
 </div>

@@ -1,3 +1,6 @@
+.curriculum-details .subjects {
+  text-align: center;
+  padding: 15px; }
 .curriculum-details .header {
   background-color: #ededed; }
   .curriculum-details .header .number, .curriculum-details .header .description {
