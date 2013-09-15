@@ -63,3 +63,13 @@ app.directive('score', function(){
     template: '<span class="score"><span>JSA: {{score | number:1}}</span> | <span>Completion: {{completion * 100 | number:0 }}%</span></span>'
   };
 });
+
+app.directive('week',function(){
+  return {
+    scope: {number:"@",description:"@"},
+    restrict: 'E',
+    transclude: true,
+    replace: true,
+    template: '<div class="week"><div class="header"><div class="number">{{number}}</div><div class="description">{{description}}</div></div><div class="body"><ol class="days" ng-transclude></ol></div></div>'
+  };
+});
