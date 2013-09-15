@@ -39,7 +39,6 @@
   margin: auto;
   max-width: 500px;
   margin-bottom: 2px; }
-.curriculum-details .topic input {
+.curriculum-details .topic select {
   clear: right;
-  float: right;
-  width: 3em; }
+  float: right; }
