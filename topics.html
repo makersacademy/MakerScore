@@ -3,14 +3,104 @@
   <div class="subjects">
     Overall: <score score="{{score}}" completion="{{completion}}"></score>
     <div ng-repeat="(subject, scores) in subject_scores">
-      {{subject}}: <score score="{{scores.score}}" completion="{{scores.completion}}"></score>
+      <span ng-show="scores.completion > 0">{{subject}}: <score score="{{scores.score}}" completion="{{scores.completion}}"></score></span>
     </div>
   </div>
-  <week number="1" description="Ruby &amp; Git">
+  <week number="1" description="The basics">
     <topic subject="Unix">Command-line 1</topic>
     <topic subject="Git">Version control 1.</topic>
     <topic subject="Ruby">Ruby 1</topic>
     <topic subject="Ruby">Ruby 2</topic>
     <topic subject="Unix">Command-line revision. Unixoid test.</topic>
   </week>
+
+  <week number="2" description="Intermediate Ruby &amp; Git">
+    <topic subject="Ruby">Ruby 3</topic>
+    <topic subject="Ruby">Ruby 4</topic>
+    <topic subject="Ruby">Ruby 5</topic>
+    <topic subject="Git">Version control 2.</topic>
+    <topic subject="Git">Version control revision. Octocat test.</topic>
+  </week>
+
+  <week number="3" description="Test-Driven Development and OOP">
+    <topic subject="OOP">Object-oriented programming 1</topic>
+    <topic subject="TDD">Test-driven development</topic>
+    <topic subject="TDD">Writing beautiful code</topic>
+    <topic subject="OOP">Object-oriented programming 2</topic>
+    <topic subject="OOP">OOP revision. Architect test.</topic>
+  </week>
+
+  <week number="4" description="Making games (OOP and TDD)">
+    <topic subject="OOP">Teamwork: battleships</topic>
+    <topic subject="Ruby">Ruby 6</topic>
+    <topic subject="Ruby">Ruby 7</topic>
+    <topic subject="Ruby">Recursion</topic>
+    <topic subject="Ruby">Ruby revision. Rubyist test.</topic>
+  </week>
+
+  <week number="5" description="Introduction to web development">
+    <topic subject="Web">Sinatra</topic>
+    <topic subject="Web">HTTP</topic>
+    <topic subject="HTML &amp; CSS">HTML &amp; CSS</topic>
+    <topic subject="Cloud">Heroku</topic>
+    <topic subject="Web">Web development revision. Ronin test.</topic>
+  </week>
+
+  <week number="6" description="Database-backed applications.">
+    <topic subject="TDD">Capybara.</topic>
+    <topic subject="Databases">Relational databases</topic>
+    <topic subject="Databases">SQL</topic>
+    <topic subject="Security">Security</topic>
+    <topic subject="Databases">Databases revision. Data test.</topic>
+  </week>
+
+  <week number="7" description="Intermediate web technologies.">
+    <topic subject="Javascript">Javascript 1</topic>
+    <topic subject="Javascript">jQuery</topic>
+    <topic subject="HTML &amp; CSS">HTML 2</topic>
+    <topic subject="HTML &amp; CSS">CSS 2</topic>
+    <topic subject="Web">Web development revision. Frontman test.</topic>
+  </week>
+
+  <week number="8" description="Advanced web technologies.">
+    <topic subject="Web">Websockets</topic>
+    <topic subject="Cloud">AWS: EC2 &amp; S3</topic>
+    <topic subject="HTML &amp; CSS">HTML 3</topic>
+    <topic subject="HTML &amp; CSS">CSS 3</topic>
+    <topic subject="Web">Advances web development revision. Polyglot test.</topic>
+  </week>
+
+  <week number="9" description="Rails introduction. Basic Rails app.">
+    <topic subject="Rails">Rails overview.</topic>
+    <topic subject="Databases">ActiveRecord</topic>
+    <topic subject="Javascript">Javascript 2</topic>
+    <topic subject="Rails">Routing and REST.</topic>
+    <topic subject="Security">Security revision. Sentry test.</topic>
+  </week>
+
+  <week number="10" description="Intermediate Rails.">
+    <topic subject="Web">APIs: Stripe, Twilio, etc.</topic>
+    <topic subject="Rails">Authentication with devise</topic>
+    <topic subject="Javascript">UJS</topic>
+    <topic subject="Rails">Asset pipeline</topic>
+    <topic subject="Ruby">Ruby revision. Advanced Rubyist test.</topic>
+  </week>
+
+  <week number="11" description="Final Rails project, MVP.">
+    <topic subject="HTML &amp; CSS">Twitter Bootstrap</topic>
+    <topic subject="TDD">Cucumber</topic>
+    <topic subject="HTML &amp; CSS">Coffeescript. Sass.</topic>
+    <topic subject="Databases">STI and Polymorphics</topic>
+    <topic subject="Rails">Rails revision. Machinist test.</topic>
+  </week>
+
+  <week number="12" description="Final Rails project, polished">
+    <topic subject="Rails">ActionMailer</topic>
+    <topic subject="Rails">Background processing</topic>
+    <topic subject="Rails">Caching</topic>
+    <topic subject="OOP">Building your own gem</topic>
+    <topic subject="Rails">Graduation!</topic>
+  </week>
+
+
 </div>
