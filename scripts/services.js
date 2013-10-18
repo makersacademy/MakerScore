@@ -11,7 +11,7 @@ angular.module('MakerScore').factory('Units',  function () {
         {"subject": "Ruby", "description": "Ruby 2"},
         {"subject": "Unix", "description": "Command-line revision. Unixoid test."}
       ]},
-      {"number": "2", "description": "Intermediate Ruby &amp; Git", "topics": [
+      {"number": "2", "description": "Intermediate Ruby & Git", "topics": [
         {"subject": "Ruby", "description": "Ruby 3"},
         {"subject": "Ruby", "description": "Ruby 4"},
         {"subject": "Ruby", "description": "Ruby 5"},
@@ -35,7 +35,7 @@ angular.module('MakerScore').factory('Units',  function () {
       {"number": "5", "description": "Introduction to web development", "topics": [
         {"subject": "Web", "description": "Sinatra"},
         {"subject": "Web", "description": "HTTP"},
-        {"subject": "HTML &amp; CSS", "description": "HTML &amp; CSS"},
+        {"subject": "HTML & CSS", "description": "HTML & CSS"},
         {"subject": "Cloud", "description": "Heroku"},
         {"subject": "Web", "description": "Web development revision. Ronin test."}
       ]},
@@ -49,15 +49,15 @@ angular.module('MakerScore').factory('Units',  function () {
       {"number": "7", "description": "Intermediate web technologies.", "topics": [
         {"subject": "Javascript", "description": "Javascript 1"},
         {"subject": "Javascript", "description": "jQuery"},
-        {"subject": "HTML &amp; CSS", "description": "HTML 2"},
-        {"subject": "HTML &amp; CSS", "description": "CSS 2"},
+        {"subject": "HTML & CSS", "description": "HTML 2"},
+        {"subject": "HTML & CSS", "description": "CSS 2"},
         {"subject": "Web", "description": "Web development revision. Frontman test."}
       ]},
       {"number": "8", "description": "Advanced web technologies.", "topics": [
         {"subject": "Web", "description": "Websockets"},
-        {"subject": "Cloud", "description": "AWS: EC2 &amp; S3"},
-        {"subject": "HTML &amp; CSS", "description": "HTML 3"},
-        {"subject": "HTML &amp; CSS", "description": "CSS 3"},
+        {"subject": "Cloud", "description": "AWS: EC2 & S3"},
+        {"subject": "HTML & CSS", "description": "HTML 3"},
+        {"subject": "HTML & CSS", "description": "CSS 3"},
         {"subject": "Web", "description": "Advances web development revision. Polyglot test."}
       ]},
       {"number": "9", "description": "Rails introduction. Basic Rails app.", "topics": [
@@ -75,9 +75,9 @@ angular.module('MakerScore').factory('Units',  function () {
         {"subject": "Ruby", "description": "Ruby revision. Advanced Rubyist test."}
       ]},
       {"number": "11", "description": "Final Rails project, MVP.", "topics": [
-        {"subject": "HTML &amp; CSS", "description": "Twitter Bootstrap"},
+        {"subject": "HTML & CSS", "description": "Twitter Bootstrap"},
         {"subject": "TDD", "description": "Cucumber"},
-        {"subject": "HTML &amp; CSS", "description": "Coffeescript. Sass."},
+        {"subject": "HTML & CSS", "description": "Coffeescript. Sass."},
         {"subject": "Databases", "description": "STI and Polymorphics"},
         {"subject": "Rails", "description": "Rails revision. Machinist test."}
       ]},
