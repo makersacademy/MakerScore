@@ -17,7 +17,7 @@ app.directive('topic',function(){
     restrict: 'EA',
     replace: true,
     transclude: true,
-    scope: {},
+    // scope: {},
     require: '^topicGroup',
     template: '<li class="topic"><span ng-transclude></span><select ng-model="score" ng-change="updateScore()"><option value="0"></option><option value="1">Beginner</option><option value="2">Imitator</option><option value="3">Repeater</option><option value="4">Habitual</option><option value="5">Master</option></select></li>',
     link: function(scope, element, attrs,topicGroupController){
