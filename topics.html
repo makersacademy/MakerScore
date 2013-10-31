@@ -8,7 +8,7 @@
   </div>
 
   <week ng-repeat='week in units' number="{{week.number}}" description="{{week.description}}">
-    <topic ng-repeat='topic in week.topics' subject="{{topic.subject}}">{{topic.description}}</topic>
+    <topic ng-repeat='topic in week.topics' subject="{{topic.subject}}" sid="{{topic.id}}">{{topic.description}}</topic>
   </week>
 
 
