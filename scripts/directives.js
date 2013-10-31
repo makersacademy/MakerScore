@@ -14,8 +14,8 @@ app.directive('topicGroup', function(){
 
 app.directive('score', function(){
   return {
-    scope: {score:"@",completion:"@"},
+    scope: {score:"@",completion:"@", subject:"@"},
     restrict: 'E',
-    template: '<span class="score"><span>JSA: {{score | number:1}}</span> | <span>Completion: {{completion * 100 | number:0 }}%</span></span>'
+    template: '<span class="score" ng-show="completion > 0">{{subject}}: <span>JSA: {{score | number:1}}</span> | <span>Completion: {{completion * 100 | number:0 }}%</span></span>'
   };
 });

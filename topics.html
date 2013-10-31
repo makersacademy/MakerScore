@@ -1,9 +1,9 @@
 <h1 style="margin-bottom:25px;">MakerScore</h1>
 <div class="curriculum-details" topic-group>
   <div class="subjects">
-    Overall: <score score="{{score}}" completion="{{completion}}"></score>
+    <score subject='Overall' score="{{score}}" completion="{{completion}}"></score>
     <div ng-repeat="(subject, scores) in subject_scores">
-      <span ng-show="scores.completion > 0">{{subject}}: <score score="{{scores.score}}" completion="{{scores.completion}}"></score></span>
+      <score subject="{{subject}}" score="{{scores.score}}" completion="{{scores.completion}}"></score>
     </div>
   </div>
 
