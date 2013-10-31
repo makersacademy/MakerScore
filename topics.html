@@ -7,9 +7,27 @@
     </div>
   </div>
 
-  <week ng-repeat='week in units' number="{{week.number}}" description="{{week.description}}">
-    <topic ng-repeat='topic in week.topics' subject="{{topic.subject}}" sid="{{topic.id}}">{{topic.description}}</topic>
-  </week>
+  <div class="week" ng-repeat='week in units'>
+    <div class="header">
+      <div class="number">{{week.number}}</div>
+      <div class="description">{{week.description}}</div>
+    </div>
+    <div class="body">
+      <ol class="days">
+        <li class="topic" ng-repeat='topic in week.topics'>
+          <span>{{topic.description}}</span>
+          <select ng-model="topic.score" ng-change="updateScore(topic)">
+            <option value="0"></option>
+            <option value="1">Beginner</option>
+            <option value="2">Imitator</option>
+            <option value="3">Repeater</option>
+            <option value="4">Habitual</option>
+            <option value="5">Master</option>
+          </select>
+        </li>
+      </ol>
+    </div>
+  </div>
 
 
 </div>

@@ -5,11 +5,11 @@ angular.module('MakerScore').factory('Units',  function () {
   units.get = function(){
     return [
      {"number": "1", "description": "The basics", "topics": [
-        {"id": "010", "subject": "Unix", "description": "Command-line 1"},
-        {"id": "020", "subject": "Git", "description": "Version control 1."},
-        {"id": "030", "subject": "Ruby", "description": "Ruby 1"},
-        {"id": "040", "subject": "Ruby", "description": "Ruby 2"},
-        {"id": "050", "subject": "Unix", "description": "Command-line revision. Unixoid test."}
+        {"id": "011", "subject": "Unix", "description": "Command-line 1"},
+        {"id": "012", "subject": "Git", "description": "Version control 1."},
+        {"id": "013", "subject": "Ruby", "description": "Ruby 1"},
+        {"id": "014", "subject": "Ruby", "description": "Ruby 2"},
+        {"id": "015", "subject": "Unix", "description": "Command-line revision. Unixoid test."}
       ]},
       {"number": "2", "description": "Intermediate Ruby & Git", "topics": [
         {"id": "021", "subject": "Ruby", "description": "Ruby 3"},
@@ -87,7 +87,7 @@ angular.module('MakerScore').factory('Units',  function () {
         {"id": "0C3", "subject": "Rails", "description": "Caching"},
         {"id": "0C4", "subject": "OOP", "description": "Building your own gem"},
         {"id": "0C5", "subject": "Rails", "description": "Graduation!"}
-      ]},
+      ]}
     ];
   };
   return units;
