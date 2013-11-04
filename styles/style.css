@@ -1,6 +1,15 @@
 .curriculum-details .subjects {
+  border-radius: 3px;
+  background-color: hsl(0,0%,96%);
   text-align: center;
-  padding: 15px; }
+  padding: 15px;
+  box-shadow: 10px 10px 25px -10px hsla(0, 0%, 0%, 0.2);
+  margin-top: 20px;
+  border-right: 2px solid hsl(0, 70%, 40%);
+/*  right: 100px;
+  top: 100px;
+  position: fixed;*/
+}
 .curriculum-details .header {
   background-color: #ededed; }
   .curriculum-details .header .number, .curriculum-details .header .description {

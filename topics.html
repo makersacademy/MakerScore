@@ -1,33 +1,48 @@
 <h1 style="margin-bottom:25px;">MakerScore</h1>
-<div class="curriculum-details" topic-group>
-  <div class="subjects">
-    <score subject='Overall' score="{{score}}" completion="{{completion}}"></score>
-    <div ng-repeat="(subject, scores) in subject_scores">
-      <score subject="{{subject}}" score="{{scores.score}}" completion="{{scores.completion}}"></score>
+<secion class="panel" id="panel-what-is-ma">
+  <div class="row-fluid">
+    <span class="span2">
+      <h3>MakerScore</h3>
+    </span>
+    <div class="overview span8 offset1">
+      <p>
+        MakerScore is...
+      </p>
     </div>
   </div>
+</section>
+<div class="curriculum-details container-fluid" topic-group>
+  <div class="row-fluid">
+    <section class="span8 weeks">
+      <div class="week" ng-repeat='week in units'>
+        <div class="header">
+          <div class="number">{{week.number}}</div>
+          <div class="description">{{week.description}}</div>
+        </div>
+        <div class="body">
+          <ol class="days">
+            <li class="topic" ng-repeat='topic in week.topics'>
+              <span>{{topic.description}}</span>
+              <select ng-model="topic.score" ng-change="updateScore(topic)">
+                <option value="0"></option>
+                <option value="1">Beginner</option>
+                <option value="2">Imitator</option>
+                <option value="3">Repeater</option>
+                <option value="4">Habitual</option>
+                <option value="5">Master</option>
+              </select>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-  <div class="week" ng-repeat='week in units'>
-    <div class="header">
-      <div class="number">{{week.number}}</div>
-      <div class="description">{{week.description}}</div>
+    <div class="span4 subjects">
+      <score subject='Overall' score="{{score}}" completion="{{completion}}"></score>
+      <div ng-repeat="(subject, scores) in subject_scores">
+        <score subject="{{subject}}" score="{{scores.score}}" completion="{{scores.completion}}"></score>
+      </div>
     </div>
-    <div class="body">
-      <ol class="days">
-        <li class="topic" ng-repeat='topic in week.topics'>
-          <span>{{topic.description}}</span>
-          <select ng-model="topic.score" ng-change="updateScore(topic)">
-            <option value="0"></option>
-            <option value="1">Beginner</option>
-            <option value="2">Imitator</option>
-            <option value="3">Repeater</option>
-            <option value="4">Habitual</option>
-            <option value="5">Master</option>
-          </select>
-        </li>
-      </ol>
-    </div>
+
   </div>
-
-
 </div>
