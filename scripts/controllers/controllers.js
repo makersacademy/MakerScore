@@ -37,4 +37,8 @@ app.controller('TopicGroupCtrl', function ($scope, Units, localStorageService) {
     $scope.subject_topics[topic.subject].push(topic);
     $scope.updateScore(topic);
   },this);
+
+  $scope.stickyTop = function(){
+    return Math.max(0,document.querySelector('.navbar-fixed-top').getBoundingClientRect().bottom)+20;
+  }
 });

@@ -37,7 +37,7 @@
       </div>
     </section>
 
-    <div class="span4 subjects">
+    <div class="span4 subjects" sticky sticky-top="stickyTop()" sticky-left="31">
       <score subject='Overall' score="{{score}}" completion="{{completion}}"></score>
       <div ng-repeat="(subject, scores) in subject_scores">
         <score subject="{{subject}}" score="{{scores.score}}" completion="{{scores.completion}}"></score>
